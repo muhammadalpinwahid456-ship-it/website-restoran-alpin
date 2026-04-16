@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Lezat - Cita Rasa Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Restoran Lezat</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#order" class="nav-link">Pesan</a></li>
+                <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1 class="title">Selamat Datang di Restoran Lezat</h1>
+            <p class="subtitle">Nikmati Cita Rasa Autentik Nusantara dengan Kualitas Terbaik</p>
+            <div class="home-stats">
+                <div class="stat">
+                    <h3>15+</h3>
+                    <p>Tahun Pengalaman</p>
+                </div>
+                <div class="stat">
+                    <h3>5000+</h3>
+                    <p>Pelanggan Puas</p>
+                </div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Layanan Terbaik</p>
+                </div>
+            </div>
+            <a href="#menu" class="btn-primary">Lihat Menu</a>
+        </div>
+        <div class="home-image">
+            <img src="https://via.placeholder.com/400x400?text=Makanan+Lezat" alt="Makanan Restoran">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Menu Makanan Kami</h2>
+            <p class="section-subtitle">Pilihan Menu Favorit Dengan Rasa yang Luar Biasa</p>
+            
+            <div class="menu-grid">
+                <!-- Menu 1: Nasi Goreng -->
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://via.placeholder.com/300x200?text=Nasi+Goreng" alt="Nasi Goreng">
+                        <span class="badge">Favorit</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Nasi Goreng Special</h3>
+                        <p>Nasi goreng dengan telur, udang, daging, sayuran segar dan bumbu pilihan</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 35.000</span>
+                            <button class="btn-order">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 2: Mie Goreng -->
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://via.placeholder.com/300x200?text=Mie+Goreng" alt="Mie Goreng">
+                        <span class="badge">Populer</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Mie Goreng Kuah</h3>
+                        <p>Mie kuning dengan kuah kaldu gurih, topping daging, sayuran dan telur</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 32.000</span>
+                            <button class="btn-order">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 3: Sate Ayam -->
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://via.placeholder.com/300x200?text=Sate+Ayam" alt="Sate Ayam">
+                        <span class="badge">Terbaik</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Sate Ayam Bumbu Kacang</h3>
+                        <p>Ayam tusuk yang empuk dengan bumbu kacang premium dan kuah kental</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 40.000</span>
+                            <button class="btn-order">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 4: Bakso -->
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://via.placeholder.com/300x200?text=Bakso" alt="Bakso">
+                        <span class="badge">Spesial</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Bakso Daging Premium</h3>
+                        <p>Bakso daging sapi dengan kuah kaldu yang gurih dan sayuran berkualitas</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 28.000</span>
+                            <button class="btn-order">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 5: Mie Ayam -->
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="data:image/jpeg;base64,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" alt="Mie Ayam">
+                        <span class="badge">Laris</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Mie Ayam Kuah</h3>
+                        <p>Mie halus dengan topping ayam shredded, telur, bakso dan kuah hangat</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 30.000</span>
+                            <button class="btn-order">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 6: Lumpia -->
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://via.placeholder.com/300x200?text=Lumpia" alt="Lumpia">
+                        <span class="badge">Cemilan</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Lumpia Goreng Emas</h3>
+                        <p>Lumpia gurih dengan isian daging dan sayuran, disajikan dengan sambal</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 18.000</span>
+                            <button class="btn-order">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2 class="section-title">Pesan Sekarang</h2>
+            <p class="section-subtitle">Hubungi Kami Melalui WhatsApp untuk Pesanan Anda</p>
+            
+            <div class="order-content">
+                <div class="order-info">
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>WhatsApp Kami</h3>
+                        <p>+62 851-3333-4672</p>
+                        <p class="small-text">Jam operasional: 10:00 - 22:00 WIB</p>
+                    </div>
+                </div>
+                
+                <div class="order-form">
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="nama">Nama Anda</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="menu">Pilih Menu</label>
+                            <select id="menu" name="menu" required>
+                                <option value="">-- Pilih Menu --</option>
+                                <option value="Nasi Goreng Special">Nasi Goreng Special - Rp 35.000</option>
+                                <option value="Mie Goreng Kuah">Mie Goreng Kuah - Rp 32.000</option>
+                                <option value="Sate Ayam Bumbu Kacang">Sate Ayam Bumbu Kacang - Rp 40.000</option>
+                                <option value="Bakso Daging Premium">Bakso Daging Premium - Rp 28.000</option>
+                                <option value="Mie Ayam Kuah">Mie Ayam Kuah - Rp 30.000</option>
+                                <option value="Lumpia Goreng Emas">Lumpia Goreng Emas - Rp 18.000</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="jumlah">Jumlah Pesanan</label>
+                            <input type="number" id="jumlah" name="jumlah" value="1" min="1" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="catatan">Catatan Khusus (Opsional)</label>
+                            <textarea id="catatan" name="catatan" rows="3" placeholder="Misal: pedas, tanpa bawang, dll"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Restoran Lezat - Cita Rasa Nusantara</h3>
+                    <p>Sejak tahun 2009, Restoran Lezat telah menjadi pilihan utama bagi para pecinta kuliner autentik Nusantara. Kami berkomitmen untuk menyajikan hidangan berkualitas dengan bahan-bahan pilihan terbaik.</p>
+                    
+                    <h4>Mengapa Memilih Kami?</h4>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Bahan Baku Berkualitas Premium</li>
+                        <li><i class="fas fa-check"></i> Resep Tradisional yang Autentik</li>
+                        <li><i class="fas fa-check"></i> Persiapan Higienis dan Bersih</li>
+                        <li><i class="fas fa-check"></i> Pelayanan Ramah dan Profesional</li>
+                        <li><i class="fas fa-check"></i> Harga Terjangkau dan Kompetitif</li>
+                        <li><i class="fas fa-check"></i> Pengiriman Cepat dan Aman</li>
+                    </ul>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>15+</h4>
+                        <p>Tahun Melayani</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>5000+</h4>
+                        <p>Pelanggan Setia</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>6</h4>
+                        <p>Menu Pilihan</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>100%</h4>
+                        <p>Kepuasan Pelanggan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Restoran Lezat</h4>
+                    <p>Menyajikan cita rasa autentik Nusantara dengan kualitas terbaik untuk Anda dan keluarga.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontak Kami</h4>
+                    <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Makan Enak No. 123, Jakarta</p>
+                    <p><i class="fas fa-envelope"></i> info@restoranlezat.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Jam Operasional</h4>
+                    <p>Senin - Jumat: 10:00 - 22:00</p>
+                    <p>Sabtu - Minggu: 09:00 - 23:00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/alvin_nkdk/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Restoran Lezat. Semua Hak Dilindungi. | Dibuat dengan <i class="fas fa-heart"></i> oleh Tim Kami</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
